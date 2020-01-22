@@ -1,9 +1,7 @@
-.container {
+body {
+  height: 100vh;
   background-image: url(../assets/images/lfz-background.jpg);
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 160px;
+  background-size: cover;
 }
 
 header {
@@ -43,7 +41,73 @@ main div {
   background-size: contain;
 }
 
+.card-front, .card-back {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
 
+.card-back {
+  background-image: url(../assets/images/lfz-card.jpg);
+}
+
+.js-logo {
+  background-image: url(../assets/images/js-logo.png);
+}
+
+.html-logo {
+  background-image: url(../assets/images/html-logo.png);
+}
+
+.github-logo {
+  background-image: url(../assets/images/gitHub-logo.png);
+}
+
+.css-logo {
+  background-image: url(../assets/images/css-logo.png);
+}
+
+.docker-logo {
+  background-image: url(../assets/images/docker-logo.jpg);
+}
+
+.mysql-logo {
+  background-image: url(../assets/images/mysql-logo.jpg);
+}
+
+.node-logo {
+  background-image: url(../assets/images/node-logo.png);
+}
+
+.php-logo {
+  background-image: url(../assets/images/php-logo.jpeg);
+}
+
+.react-logo {
+  background-image: url(../assets/images/react-logo.png);
+}
+
+div.col-2 {
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+  display: none;
+}
 
 
 
