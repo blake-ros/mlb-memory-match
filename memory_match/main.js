@@ -25,6 +25,7 @@ function handleClick(event) {
       secondCardClicked = null;
       matches++
       if(matches === maxMatches) {
+        document.getElementById('modal').classList.remove('hidden');
       }
       gameCards.addEventListener('click', handleClick);
       console.log(matches);
