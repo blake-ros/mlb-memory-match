@@ -82,3 +82,13 @@ function resetCards() {
     }
     document.getElementById('modal').classList.add('hidden');
 }
+
+function shuffleCards() {
+  var allCards = document.getElementById('game-cards').children('div');
+    for(var i = 0; i < allCards.length; i++) {
+      var randomPosition = Math.floor(Math.random() * allCards.length);
+      var placeHolder = allCards[i];
+      allCards[i] = allCards[randomPosition];
+      allCards[randomPosition] = placeHolder
+    }
+}
