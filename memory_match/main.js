@@ -58,6 +58,27 @@ function displayStats() {
 }
 
 function calculateAccuracy(attempts, matches) {
+  if(!attempts){
+    return "0%";
+  }
   var value = (matches / attempts) * 100;
   return Math.trunc(value) + "%";
+}
+
+document.getElementById('reset-game').addEventListener('click', resetGame);
+
+function resetGame() {
+  resetCards();
+  attempts = 0;
+  matches = 0;
+  gamesPlayed++;
+  displayStats();
+}
+
+function resetCards() {
+  var hiddenCards = document.querySelectorAll('.hidden')
+    for(var i = 0; i < hiddenCards.length; i++) {
+      hiddenCards[i].classList.remove('hidden');
+    }
+    document.getElementById('modal').classList.add('hidden');
 }

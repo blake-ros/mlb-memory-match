@@ -112,7 +112,12 @@ div.col-2 {
   font-size: 30px;
 }
 
-
+button {
+  font-size: 16px;
+  padding: 8px;
+  border: 4px solid black;
+  margin: 20px;
+}
 
 
 
