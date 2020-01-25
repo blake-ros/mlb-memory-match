@@ -73,6 +73,9 @@ function resetGame() {
   matches = 0;
   gamesPlayed++;
   displayStats();
+  destroyCards();
+  shuffleCards();
+  newCards();
 }
 
 function resetCards() {
@@ -84,11 +87,39 @@ function resetCards() {
 }
 
 function shuffleCards() {
-  var allCards = document.getElementById('game-cards').children('div');
     for(var i = 0; i < allCards.length; i++) {
       var randomPosition = Math.floor(Math.random() * allCards.length);
       var placeHolder = allCards[i];
       allCards[i] = allCards[randomPosition];
       allCards[randomPosition] = placeHolder
     }
+}
+
+var allCards = ['js-logo', 'css-logo', 'react-logo', 'docker-logo', 'node-logo',
+  'github-logo', 'mysql-logo', 'php-logo', 'html-logo', 'js-logo', 'css-logo',
+  'react-logo', 'docker-logo', 'node-logo', 'github-logo', 'mysql-logo',
+  'php-logo', 'html-logo'];
+
+function newCards() {
+  for(var i = 0; i < allCards.length; i++) {
+    var gameCards = document.querySelector('#gameCards');
+    var cardDiv = document.createElement('div');
+    cardDiv.classList.add('col-2');
+    var cardFront = document.createElement('div');
+    cardFront.classList.add('card-front')
+    cardFront.classList.add(allCards[i]);
+    var cardBack = document.createElement('div');
+    cardBack.classList.add('card-back');
+
+    cardDiv.append(cardFront);
+    cardDiv.append(cardBack);
+    gameCards.append(cardDiv);
+  }
+}
+
+function destroyCards() {
+  var mainElement = document.getElementById('gameCards');
+  while (mainElement.firstChild) {
+    mainElement.removeChild(mainElement.firstChild);
+  }
 }
