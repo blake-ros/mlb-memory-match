@@ -121,7 +121,57 @@ button {
   margin: 20px;
 }
 
+@media only screen
+  and (min-width: 375px){
+    main div {
+      height: 12vh;
+      flex-basis: 30%;
+    }
 
+    header {
+      font-size: 35px;
+    }
+
+    aside {
+      padding: 0px;
+    }
+
+    aside div {
+      font-size: 12px;
+    }
+  }
+
+@media only screen
+  and (min-width: 667px) {
+    main div {
+      flex-basis: 15%;
+      height: 22vh;
+    }
+
+    header {
+      font-size: 30px;
+      padding: 10px;
+    }
+
+    aside {
+      padding: 0px;
+    }
+
+    aside div {
+      padding: 3px;
+    }
+  }
+
+@media only screen
+  and (min-width: 768px) {
+    header {
+      font-size: 60px;
+    }
+
+    main div {
+      height: 16vh;
+    }
+  }
 
 
 
