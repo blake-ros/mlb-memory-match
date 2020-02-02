@@ -123,3 +123,10 @@ function destroyCards() {
     mainElement.removeChild(mainElement.firstChild);
   }
 }
+
+gameCards.onload = onLoadShuffle();
+function onLoadShuffle() {
+  destroyCards();
+  shuffleCards();
+  newCards();
+}
