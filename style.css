@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-image: url(assets/images/lfz-background.jpg);
+  background-image: url(assets/images/mlb-background.jpg);
   background-size: cover;
 }
 
@@ -8,7 +8,7 @@ header {
   margin: auto;
   font-size: 60px;
   font-weight: bold;
-  color: hotpink;
+  color: red;
   padding: 20px;
 }
 
@@ -53,43 +53,43 @@ main div {
 }
 
 .card-back {
-  background-image: url(assets/images/lfz-card.jpg);
+  background-image: url(assets/images/mlb-logo.png);
 }
 
-.js-logo {
-  background-image: url(assets/images/js-logo.png);
+.astros-logo {
+  background-image: url(assets/images/astros-logo.png);
 }
 
-.html-logo {
-  background-image: url(assets/images/html-logo.png);
+.dodgers-logo {
+  background-image: url(assets/images/dodgers-logo.png);
 }
 
-.github-logo {
-  background-image: url(assets/images/gitHub-logo.png);
+.giants-logo {
+  background-image: url(assets/images/giants-logo.png);
 }
 
-.css-logo {
-  background-image: url(assets/images/css-logo.png);
+.brewers-logo {
+  background-image: url(assets/images/brewers-logo.jpg);
 }
 
-.docker-logo {
-  background-image: url(assets/images/docker-logo.jpg);
+.yankees-logo {
+  background-image: url(assets/images/yankees-logo.jpg);
 }
 
-.mysql-logo {
-  background-image: url(assets/images/mysql-logo.jpg);
+.redsox-logo {
+  background-image: url(assets/images/redsox-logo.png);
 }
 
-.node-logo {
-  background-image: url(assets/images/node-logo.png);
+.rockies-logo {
+  background-image: url(assets/images/rockies-logo.jpg);
 }
 
-.php-logo {
-  background-image: url(assets/images/php-logo.jpeg);
+.oakland-logo {
+  background-image: url(assets/images/oakland-logo.jpg);
 }
 
-.react-logo {
-  background-image: url(assets/images/react-logo.png);
+.cubs-logo {
+  background-image: url(assets/images/cubs-logo.jpg);
 }
 
 div.col-2 {
