@@ -33,7 +33,6 @@ function handleClick(event) {
       attempts++
       displayStats();
       gameCards.addEventListener('click', handleClick);
-      console.log('attempts:', attempts);
     } else {
       gameCards.removeEventListener('click', handleClick);
       setTimeout(function(){
@@ -45,7 +44,6 @@ function handleClick(event) {
       }, 1500);
       attempts++
       displayStats();
-      console.log('attempts:', attempts)
     }
   }
 }
@@ -95,10 +93,10 @@ function shuffleCards() {
     }
 }
 
-var allCards = ['js-logo', 'css-logo', 'react-logo', 'docker-logo', 'node-logo',
-  'github-logo', 'mysql-logo', 'php-logo', 'html-logo', 'js-logo', 'css-logo',
-  'react-logo', 'docker-logo', 'node-logo', 'github-logo', 'mysql-logo',
-  'php-logo', 'html-logo'];
+var allCards = ['astros-logo', 'brewers-logo', 'dodgers-logo', 'giants-logo', 'oakland-logo',
+  'redsox-logo', 'rockies-logo', 'yankees-logo', 'astros-logo', 'brewers-logo', 'dodgers-logo',
+  'giants-logo', 'oakland-logo', 'redsox-logo', 'rockies-logo', 'yankees-logo',
+  'cubs-logo', 'cubs-logo'];
 
 function newCards() {
   for(var i = 0; i < allCards.length; i++) {
