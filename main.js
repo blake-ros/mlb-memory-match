@@ -33,7 +33,6 @@ function handleClick(event) {
       attempts++
       displayStats();
       gameCards.addEventListener('click', handleClick);
-      console.log('attempts:', attempts);
     } else {
       gameCards.removeEventListener('click', handleClick);
       setTimeout(function(){
@@ -45,7 +44,6 @@ function handleClick(event) {
       }, 1500);
       attempts++
       displayStats();
-      console.log('attempts:', attempts)
     }
   }
 }
