@@ -130,3 +130,11 @@ function onLoadShuffle() {
   shuffleCards();
   newCards();
 }
+
+// var icon = document.getElementById('icon');
+// icon.addEventListener('click', volumeOn)
+
+// function volumeOn(event) {
+//   var thisIcon = document.getElementById('icon');
+//   thisIcon.
+// }

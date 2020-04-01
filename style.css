@@ -175,7 +175,11 @@ button {
     }
   }
 
-
+.volumeControl {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
 
 
 
