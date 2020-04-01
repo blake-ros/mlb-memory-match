@@ -59,8 +59,10 @@ function calculateAccuracy(attempts, matches) {
   if(!attempts){
     return "0%";
   }
-  var value = (matches / attempts) * 100;
-  return Math.trunc(value) + "%";
+  var value = (matches / attempts)
+  var battingAverage = value.toFixed(3);
+  var formattedAverage = battingAverage.substring(1);
+  return formattedAverage
 }
 
 document.getElementById('reset-game').addEventListener('click', resetGame);
@@ -128,3 +130,11 @@ function onLoadShuffle() {
   shuffleCards();
   newCards();
 }
+
+// var icon = document.getElementById('icon');
+// icon.addEventListener('click', volumeOn)
+
+// function volumeOn(event) {
+//   var thisIcon = document.getElementById('icon');
+//   thisIcon.
+// }
