@@ -47,6 +47,7 @@ main div {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  object-fit: contain;
   position: absolute;
   top: 0;
   left: 0;
@@ -57,39 +58,39 @@ main div {
 }
 
 .astros-logo {
-  background-image: url(assets/images/astros-logo.png);
+  background-image: url(assets/images/new-astros-image.PNG);
 }
 
 .dodgers-logo {
-  background-image: url(assets/images/dodgers-logo.png);
+  background-image: url(assets/images/new-dodgers-logo.PNG);
 }
 
 .giants-logo {
-  background-image: url(assets/images/giants-logo.png);
+  background-image: url(assets/images/new-giants-logo.PNG);
 }
 
 .brewers-logo {
-  background-image: url(assets/images/brewers-logo.jpg);
+  background-image: url(assets/images/new-brewers-logo.PNG);
 }
 
 .yankees-logo {
-  background-image: url(assets/images/yankees-logo.jpg);
+  background-image: url(assets/images/new-yankees-logo.PNG);
 }
 
 .redsox-logo {
-  background-image: url(assets/images/redsox-logo.png);
+  background-image: url(assets/images/new-redsox-log.PNG);
 }
 
 .rockies-logo {
-  background-image: url(assets/images/rockies-logo.jpg);
+  background-image: url(assets/images/new-rockies-logo.PNG);
 }
 
 .oakland-logo {
-  background-image: url(assets/images/oakland-logo.jpg);
+  background-image: url(assets/images/new-oakland-logo.PNG);
 }
 
 .cubs-logo {
-  background-image: url(assets/images/cubs-logo.jpg);
+  background-image: url(assets/images/new-cubs-logo.PNG);
 }
 
 div.col-2 {
