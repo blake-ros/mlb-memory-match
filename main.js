@@ -59,8 +59,9 @@ function calculateAccuracy(attempts, matches) {
   if(!attempts){
     return "0%";
   }
-  var value = (matches / attempts) * 100;
-  return Math.trunc(value) + "%";
+  var value = (matches / attempts)
+  var battingAverage = value.toFixed(3);
+  return battingAverage
 }
 
 document.getElementById('reset-game').addEventListener('click', resetGame);
