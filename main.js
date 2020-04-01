@@ -61,7 +61,8 @@ function calculateAccuracy(attempts, matches) {
   }
   var value = (matches / attempts)
   var battingAverage = value.toFixed(3);
-  return battingAverage
+  var formattedAverage = battingAverage.substring(1);
+  return formattedAverage
 }
 
 document.getElementById('reset-game').addEventListener('click', resetGame);
