@@ -156,3 +156,5 @@ var backgroundAudio = new Audio();
 backgroundAudio.volume = .7;
 backgroundAudio.src = './assets/organ.mp3';
 backgroundAudio.loop = true;
+
+// need to figuer out how to render modals based on the id of reset game/ reset game 2 / reset game 3 etc
