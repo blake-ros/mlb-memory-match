@@ -191,7 +191,14 @@ button {
 }
 
 
-
+.homerun {
+  background-image: url('./assets/images/homerungif.gif');
+  width: 350px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
 
 
 
