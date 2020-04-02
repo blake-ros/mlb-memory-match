@@ -131,10 +131,21 @@ function onLoadShuffle() {
   newCards();
 }
 
-// var icon = document.getElementById('icon');
-// icon.addEventListener('click', volumeOn)
+var icon = document.getElementById('icon');
+icon.addEventListener('click', volumeToggle);
 
-// function volumeOn(event) {
-//   var thisIcon = document.getElementById('icon');
-//   thisIcon.
-// }
+function volumeToggle() {
+  var thisIcon = document.getElementById('icon');
+  thisIcon.classList.remove('fa-volume-mute');
+  thisIcon.classList.add('fa-volume-up');
+  thisIcon.removeEventListener('click', volumeToggle)
+  thisIcon.addEventListener('click', volumeChange);
+}
+
+function volumeChange() {
+  var muteIcon = document.getElementById('icon');
+  muteIcon.classList.remove('fa-volume-up');
+  muteIcon.classList.add('fa-volume-mute');
+  muteIcon.removeEventListener('click', volumeChange);
+  muteIcon.addEventListener('click', volumeToggle);
+}
