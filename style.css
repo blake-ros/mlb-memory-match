@@ -193,11 +193,25 @@ button {
 
 .homerun {
   background-image: url('./assets/images/homerungif.gif');
-  width: 350px;
+  width: 550px;
   height: 350px;
   background-position: center;
   background-size: cover;
   margin: auto;
+}
+
+.strikeout {
+  background-image: url('./assets/images/strikeoutgif.gif');
+  width: 550px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.modal-header {
+  margin: auto;
+  font-size: 24px;
 }
 
 
