@@ -109,11 +109,12 @@ div.col-2 {
 }
 
 .modal-content {
-  background-color: blue;
+  background-color: white;
   border: 5px solid lightblue;
   width: 50%;
   text-align: center;
   font-size: 30px;
+  border-radius: 25px;
 }
 
 button {
@@ -211,7 +212,7 @@ button {
 
 .modal-header {
   margin: auto;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 
