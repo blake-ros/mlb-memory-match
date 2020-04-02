@@ -140,6 +140,7 @@ function volumeToggle() {
   thisIcon.classList.add('fa-volume-up');
   thisIcon.removeEventListener('click', volumeToggle)
   thisIcon.addEventListener('click', volumeChange);
+  backgroundAudio.play();
 }
 
 function volumeChange() {
@@ -148,4 +149,10 @@ function volumeChange() {
   muteIcon.classList.add('fa-volume-mute');
   muteIcon.removeEventListener('click', volumeChange);
   muteIcon.addEventListener('click', volumeToggle);
+  backgroundAudio.pause();
 }
+
+var backgroundAudio = new Audio();
+backgroundAudio.volume = .7;
+backgroundAudio.src = './assets/organ.mp3';
+backgroundAudio.loop = true;

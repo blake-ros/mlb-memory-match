@@ -22,7 +22,11 @@
     <div class="row">
       <header>MLB Memory Match</header>
       <div class="volumeControl">
-        <i id="icon" class="fas fa-volume-mute volumeOn"><audio><source src="assets/organ.mp3"></audio></i>
+        <i id="icon" class="fas fa-volume-mute volumeOn">
+          <audio loop class="hidden">
+            <source src="assets/organ.mp3" type="audio/mpeg">
+          </audio>
+        </i>
         <!-- <audio controls>
           <source src="assets/organ.mp3" type="audio/mpeg">
         </audio> -->
