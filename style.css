@@ -164,6 +164,16 @@ button {
       align-items: center;
       justify-content: center;
     }
+
+    .modal-content {
+      width: 63%;
+      height: 70%;
+    }
+
+    .homerun {
+      width: 186px;
+      height: 161px;
+    }
   }
 
 @media only screen
