@@ -150,7 +150,7 @@ button {
     }
 
     header {
-      font-size: 35px;
+      font-size: 30px;
     }
 
     aside {
@@ -201,11 +201,25 @@ button {
   }
 
 @media only screen
-  and (min-width: 768px)
-  and (max-width: 1024px) {
+  and (min-width: 1024px) {
+    main div {
+      height: 18vh;
+    }
+  }
+
+@media only screen
+  and (min-height: 1024px) {
     main div {
       flex-basis: 30%;
       height: 14vh;
+    }
+  }
+
+@media only screen
+  and (min-width: 1366px) {
+    main div {
+    height: 17vh;
+    flex-basis: 15%
     }
   }
 /* @media only screen
