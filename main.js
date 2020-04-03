@@ -57,7 +57,7 @@ function displayStats() {
 
 function calculateAccuracy(attempts, matches) {
   if(!attempts){
-    return "0%";
+    return ".000";
   }
   var value = (matches / attempts)
   var battingAverage = value.toFixed(3);
@@ -140,6 +140,7 @@ function volumeToggle() {
   thisIcon.classList.add('fa-volume-up');
   thisIcon.removeEventListener('click', volumeToggle)
   thisIcon.addEventListener('click', volumeChange);
+  backgroundAudio.play();
 }
 
 function volumeChange() {
@@ -148,4 +149,12 @@ function volumeChange() {
   muteIcon.classList.add('fa-volume-mute');
   muteIcon.removeEventListener('click', volumeChange);
   muteIcon.addEventListener('click', volumeToggle);
+  backgroundAudio.pause();
 }
+
+var backgroundAudio = new Audio();
+backgroundAudio.volume = .7;
+backgroundAudio.src = './assets/organ.mp3';
+backgroundAudio.loop = true;
+
+// need to figuer out how to render modals based on the id of reset game/ reset game 2 / reset game 3 etc
