@@ -164,6 +164,24 @@ button {
       align-items: center;
       justify-content: center;
     }
+
+    .modal-content {
+      width: 63%;
+      height: 84%;
+    }
+
+    div .homerun {
+      width: 186px;
+      height: 161px;
+    }
+
+    .modal-header {
+      font-size: 30px;
+    }
+
+    #braek {
+      display: none;
+    }
   }
 
 @media only screen
