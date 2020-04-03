@@ -20,6 +20,9 @@ aside {
 }
 
 aside div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 6vh;
   text-align: center;
   padding-top: 30px;
@@ -27,6 +30,7 @@ aside div {
   margin: 5px;
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 main {
@@ -115,6 +119,10 @@ div.col-2 {
   text-align: center;
   font-size: 30px;
   border-radius: 25px;
+}
+
+.initialModalHeader {
+  color: red;
 }
 
 button {
