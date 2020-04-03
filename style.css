@@ -25,7 +25,7 @@ aside div {
   justify-content: center;
   height: 6vh;
   text-align: center;
-  padding-top: 30px;
+  /* padding-top: 30px; */
   background-color: lightblue;
   margin: 5px;
   font-weight: bold;
@@ -49,6 +49,11 @@ main div {
 
 main div:hover {
   box-shadow: 0 5px 15px rgba(216, 20, 20, 0.524);
+}
+
+#mainStats {
+  border: 2px solid red;
+  background-color: white;
 }
 
 .card-front, .card-back {
@@ -154,6 +159,9 @@ button {
 
     aside div {
       font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -175,6 +183,9 @@ button {
 
     aside div {
       padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -185,9 +196,26 @@ button {
     }
 
     main div {
-      height: 18vh;
+      height: 21vh;
     }
   }
+
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px) {
+    main div {
+      flex-basis: 30%;
+      height: 14vh;
+    }
+  }
+/* @media only screen
+  and (min-height: 1024)
+  and (min-width: 768) {
+    main div {
+      flex-basis: 25%;
+      height: 16vh;
+    }
+  } */
 
 .volumeControl {
   position: fixed;
