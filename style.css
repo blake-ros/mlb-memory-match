@@ -192,7 +192,7 @@ button {
 @media only screen
   and (min-width: 768px) {
     header {
-      font-size: 60px;
+      font-size: 45px;
     }
 
     main div {
@@ -222,14 +222,6 @@ button {
     flex-basis: 15%
     }
   }
-/* @media only screen
-  and (min-height: 1024)
-  and (min-width: 768) {
-    main div {
-      flex-basis: 25%;
-      height: 16vh;
-    }
-  } */
 
 .volumeControl {
   position: fixed;
@@ -237,27 +229,12 @@ button {
   right: 10px;
 }
 
-
-
-
-
-
 .hidden {
   display: none;
 }
 
-
 .homerun {
   background-image: url('./assets/images/homerungif.gif');
-  width: 550px;
-  height: 350px;
-  background-position: center;
-  background-size: cover;
-  margin: auto;
-}
-
-.strikeout {
-  background-image: url('./assets/images/strikeoutgif.gif');
   width: 550px;
   height: 350px;
   background-position: center;
@@ -269,54 +246,3 @@ button {
   margin: auto;
   font-size: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .container {
-  width: 90%;
-  margin: auto;
-  background-color: lightcoral;
-}
-
-.header-row {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-} */
-
-/* .header {
-  width: 1240px;
-  margin: auto;
-  background-color: lightcoral;
-  text-align: center;
-  font-size: 48px;
-
-}
-
-.stats-container {
-  width: 15%;
-  height: 500px;
-  background-color: lightcoral;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 38px;
-}
-
-.stat {
-  width: 90%;
-  background-color: lightblue;
-  text-align: center;
-  padding: 10px;
-  padding-bottom: 10px;
-} */
