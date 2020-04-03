@@ -30,9 +30,6 @@ function handleClick(event) {
       if(matches === maxMatches) {
         document.getElementById('modal').classList.remove('hidden');
       }
-      if(matches === maxMatches && attempts <= 18) {
-        document.getElementById('modal-2').classList.remove('hidden')
-      }
       attempts++
       displayStats();
       gameCards.addEventListener('click', handleClick);

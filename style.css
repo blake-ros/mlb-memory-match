@@ -44,6 +44,7 @@ main div {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  border-radius: 10px;
 }
 
 .card-front, .card-back {
@@ -114,7 +115,7 @@ div.col-2 {
 
 .modal-content {
   background-color: white;
-  border: 5px solid lightblue;
+  border: 5px solid red;
   width: 50%;
   text-align: center;
   font-size: 30px;
