@@ -167,12 +167,20 @@ button {
 
     .modal-content {
       width: 63%;
-      height: 70%;
+      height: 84%;
     }
 
-    .homerun {
+    div .homerun {
       width: 186px;
       height: 161px;
+    }
+
+    .modal-header {
+      font-size: 30px;
+    }
+
+    #braek {
+      display: none;
     }
   }
 
