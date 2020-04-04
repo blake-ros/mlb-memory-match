@@ -227,6 +227,10 @@ button {
       flex-basis: 30%;
       height: 14vh;
     }
+
+    div .modal-content {
+      height: 45%;
+    }
   }
 
 @media only screen
@@ -250,6 +254,15 @@ button {
       height: 58%;
     }
   }
+
+@media only screen
+  and (min-height: 768px) {
+    div .homerun {
+      width: 233px;
+      height: 162px;
+    }
+  }
+
 .volumeControl {
   position: fixed;
   top: 10px;
