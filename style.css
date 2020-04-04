@@ -243,6 +243,13 @@ button {
       height: 70%;
     }
   }
+
+@media only screen
+  and (min-height: 736px) {
+    .modal-content {
+      height: 58%;
+    }
+  }
 .volumeControl {
   position: fixed;
   top: 10px;
