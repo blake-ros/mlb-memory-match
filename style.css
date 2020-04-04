@@ -179,11 +179,6 @@ button {
       font-size: 30px;
     }
 
-    #braek {
-      display: none;
-    }
-  }
-
 @media only screen
   and (min-width: 667px) {
     main div {
@@ -232,6 +227,10 @@ button {
       flex-basis: 30%;
       height: 14vh;
     }
+
+    div .modal-content {
+      height: 45%;
+    }
   }
 
 @media only screen
@@ -239,6 +238,28 @@ button {
     main div {
     height: 17vh;
     flex-basis: 15%
+    }
+  }
+
+@media only screen
+  and (min-height: 667px) {
+    .modal-content {
+      height: 70%;
+    }
+  }
+
+@media only screen
+  and (min-height: 736px) {
+    .modal-content {
+      height: 58%;
+    }
+  }
+
+@media only screen
+  and (min-height: 768px) {
+    div .homerun {
+      width: 233px;
+      height: 162px;
     }
   }
 
