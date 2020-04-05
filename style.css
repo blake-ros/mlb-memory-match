@@ -259,6 +259,10 @@ button {
     .modal-content {
       width: 40%;
     }
+
+    aside div {
+      font-size: 18px;
+    }
   }
 
 @media only screen
@@ -273,14 +277,6 @@ button {
     .modal-content {
       height: 58%;
     }
-  }
-
-@media only screen
-  and (min-height: 768px) {
-    /* div .homerun {
-      width: 380px;
-      height: 275px;
-    } */
   }
 
 @media only screen
@@ -301,6 +297,10 @@ button {
 
     button {
       margin-top: 80px;
+    }
+
+    aside div {
+      font-size: 18px;
     }
   }
 
