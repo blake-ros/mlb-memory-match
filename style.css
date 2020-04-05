@@ -219,6 +219,11 @@ button {
     main div {
       height: 18vh;
     }
+
+    .homerun {
+      height: 280px;
+      width: 450px;
+    }
   }
 
 @media only screen
@@ -230,6 +235,11 @@ button {
 
     div .modal-content {
       height: 45%;
+    }
+
+    div .homerun {
+      width: 300px;
+      height: 280px;
     }
   }
 
@@ -257,10 +267,10 @@ button {
 
 @media only screen
   and (min-height: 768px) {
-    div .homerun {
-      width: 233px;
-      height: 162px;
-    }
+    /* div .homerun {
+      width: 380px;
+      height: 275px;
+    } */
   }
 
 @media only screen
