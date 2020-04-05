@@ -254,6 +254,10 @@ button {
     height: 17vh;
     flex-basis: 15%
     }
+
+    .modal-content {
+      width: 40%;
+    }
   }
 
 @media only screen
@@ -287,6 +291,11 @@ button {
 
     .modal-header {
       font-size: 50px;
+    }
+
+    .modal-content {
+      width: 40%;
+      height: 40%;
     }
   }
 
