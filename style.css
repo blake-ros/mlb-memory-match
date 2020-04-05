@@ -239,7 +239,8 @@ button {
     }
 
     div .modal-content {
-      height: 45%;
+      height: 43%;
+      width: 45%
     }
 
     div .homerun {
@@ -296,6 +297,10 @@ button {
     .modal-content {
       width: 40%;
       height: 40%;
+    }
+
+    button {
+      margin-top: 80px;
     }
   }
 
