@@ -263,6 +263,18 @@ button {
     }
   }
 
+@media only screen
+  and (min-height: 1366px) {
+    .homerun {
+      width: 350px;
+      height: 400px;
+    }
+
+    .modal-header {
+      font-size: 50px;
+    }
+  }
+
 .volumeControl {
   position: fixed;
   top: 10px;
