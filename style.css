@@ -212,12 +212,22 @@ button {
     main div {
       height: 21vh;
     }
+
+    .homerun {
+      height: 280px;
+      width: 450px;
+    }
   }
 
 @media only screen
   and (min-width: 1024px) {
     main div {
       height: 18vh;
+    }
+
+    div .homerun {
+      height: 280px;
+      width: 450px;
     }
   }
 
@@ -229,7 +239,13 @@ button {
     }
 
     div .modal-content {
-      height: 45%;
+      height: 43%;
+      width: 45%
+    }
+
+    div .homerun {
+      width: 300px;
+      height: 280px;
     }
   }
 
@@ -238,6 +254,10 @@ button {
     main div {
     height: 17vh;
     flex-basis: 15%
+    }
+
+    .modal-content {
+      width: 40%;
     }
   }
 
@@ -257,10 +277,10 @@ button {
 
 @media only screen
   and (min-height: 768px) {
-    div .homerun {
-      width: 233px;
-      height: 162px;
-    }
+    /* div .homerun {
+      width: 380px;
+      height: 275px;
+    } */
   }
 
 @media only screen
@@ -272,6 +292,15 @@ button {
 
     .modal-header {
       font-size: 50px;
+    }
+
+    .modal-content {
+      width: 40%;
+      height: 40%;
+    }
+
+    button {
+      margin-top: 80px;
     }
   }
 
