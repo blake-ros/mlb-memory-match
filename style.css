@@ -143,9 +143,7 @@ button {
 }
 
 .statsBorder {
-  border: 2px solid yellow;
-  background-color: #B5651D;
-  color: white;
+  background-color: lightblue;
 }
 
 @media only screen
