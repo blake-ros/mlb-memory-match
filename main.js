@@ -57,12 +57,11 @@ function displayStats() {
 
 function calculateAccuracy(attempts, matches) {
   if(!attempts){
-    return ".000";
+    return "0";
   }
   var value = (matches / attempts)
-  var battingAverage = value.toFixed(3);
-  var formattedAverage = battingAverage.substring(1);
-  return formattedAverage
+  var battingAverage = value * 100;
+  return battingAverage.toFixed(0) + "%"
 }
 
 document.getElementById('reset-game').addEventListener('click', resetGame);
