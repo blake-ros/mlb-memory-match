@@ -11,6 +11,7 @@ header {
   font-weight: bold;
   color: red;
   padding: 20px;
+  font-family: Lobster;
 }
 
 aside {
@@ -149,6 +150,7 @@ button:hover {
 
 .statsBorder {
   background-color: lightblue;
+  border: 2px solid red;
 }
 
 @media only screen
