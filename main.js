@@ -9,7 +9,7 @@ var secondCardClasses = null;
 var maxMatches = 9;
 var matches = 0;
 var attempts = 0;
-var gamesPlayed = 0;
+var gamesPlayed = 1;
 
 function handleClick(event) {
   if(event.target.className.indexOf('card-back') === -1) {
@@ -57,7 +57,7 @@ function displayStats() {
 
 function calculateAccuracy(attempts, matches) {
   if(!attempts){
-    return "0";
+    return ".000";
   }
   var value = (matches / attempts)
   var battingAverage = value.toFixed(3);
