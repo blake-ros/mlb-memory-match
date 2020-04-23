@@ -9,7 +9,7 @@ var secondCardClasses = null;
 var maxMatches = 9;
 var matches = 0;
 var attempts = 0;
-var gamesPlayed = 0;
+var gamesPlayed = 1;
 
 function handleClick(event) {
   if(event.target.className.indexOf('card-back') === -1) {
@@ -23,6 +23,8 @@ function handleClick(event) {
     secondCardClicked = event.target
     secondCardClasses = secondCardClicked.previousElementSibling.className
     if(firstCardClasses === secondCardClasses) {
+      firstCardClicked.classList.remove('hover');
+      secondCardClicked.classList.remove('hover');
       firstCardClicked = null;
       secondCardClicked = null;
       matches++
@@ -57,11 +59,15 @@ function displayStats() {
 
 function calculateAccuracy(attempts, matches) {
   if(!attempts){
-    return "0";
+    return ".000";
   }
   var value = (matches / attempts)
-  var battingAverage = value * 100;
-  return battingAverage.toFixed(0) + "%"
+  var battingAverage = value.toFixed(3);
+  if(value === 1) {
+    return '1.000'
+  } else {
+    return battingAverage.substring(1);
+  }
 }
 
 document.getElementById('reset-game').addEventListener('click', resetGame);
@@ -109,6 +115,8 @@ function newCards() {
     cardFront.classList.add(allCards[i]);
     var cardBack = document.createElement('div');
     cardBack.classList.add('card-back');
+    cardBack.classList.add('hover');
+
 
     cardDiv.append(cardFront);
     cardDiv.append(cardBack);
