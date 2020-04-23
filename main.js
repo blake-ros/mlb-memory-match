@@ -23,7 +23,8 @@ function handleClick(event) {
     secondCardClicked = event.target
     secondCardClasses = secondCardClicked.previousElementSibling.className
     if(firstCardClasses === secondCardClasses) {
-
+      firstCardClicked.classList.remove('hover');
+      secondCardClicked.classList.remove('hover');
       firstCardClicked = null;
       secondCardClicked = null;
       matches++
@@ -38,10 +39,8 @@ function handleClick(event) {
       gameCards.removeEventListener('click', handleClick);
       setTimeout(function(){
       firstCardClicked.classList.remove('hidden');
-      firstCardClicked.classList.remove('hover');
       firstCardClicked = null;
       secondCardClicked.classList.remove('hidden');
-      secondCardClicked.classList.remove('hover');
       secondCardClicked = null;
       gameCards.addEventListener('click', handleClick);
       }, 1500);
