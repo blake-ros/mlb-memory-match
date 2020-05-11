@@ -4,8 +4,8 @@ A JavaScript memory match application based on Major League Baseball teams. User
 
 ## Technology Used:
  - JavaScript
- - CSS
- - HTML
+ - CSS3
+ - HTML5
  
 ## Live Demo
 
